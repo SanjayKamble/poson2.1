@@ -1,0 +1,23 @@
+{
+    "app_title": "शीर्षक",
+    "language": "हिंदी",
+    "welcome_message": "स्वागत",
+    "sign_up": "साइन अप करें",
+    "having_an_account": "क्या आपके पास पहले से खाता है ?",
+    "sign_in": "साइन इन",
+    "here": "करें",
+    "with": "",
+    "or": "या",
+    "what_are_you_looking_for": "निम्नलिखित में से चुने",
+    "personal": "व्यक्तिगत",
+    "organization": "संगठन",
+    "partner": "भागीदार",
+    "next": "आगे बढ़ें",
+    "enter_here": "यहां प्रविष्ट करें",
+    "full_name": "पूरा नाम",
+    "email_id": "ईमेल आईडी",
+    "phone": "फ़ोन",
+    "password": "पासवर्ड",
+    "repeat-password": "पासवर्ड दोहराएं",
+    "robot": "में रोबोट नहीं हूँ"
+}

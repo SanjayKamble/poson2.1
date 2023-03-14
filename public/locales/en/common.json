@@ -1,0 +1,23 @@
+{
+  "app_title": "Title",
+  "language": "Language",
+  "welcome_message": "Welcome",
+  "sign_up":"Sign Up",
+  "having_an_account":"Having an account?",
+  "sign_in":"Sign In",
+  "here":"here",
+  "with":"with",
+  "or":"Or",
+  "what_are_you_looking_for":"what are you looking for",
+  "personal":"Personal",
+  "organization":"Organization",
+  "partner":"Partner",
+  "next":"Next",
+  "enter_here":"Enter here",
+  "full_name":"Full Name",
+  "email_id":"Email Id",
+  "phone":"Phone",
+  "password":"Password",
+  "repeat-password":"Repeat Password",
+  "robot":"I am not a robot"
+  }
