@@ -1,9 +1,7 @@
 import { useSession, signIn, signOut } from "next-auth/react";
-import { useState, useEffect } from "react";
-import { useRouter } from 'next/router';
+import { useState} from "react";
 import Radio from "@/components/form/radio";
 import SimpleSlider from "@/components/signup/slider";
-import Slider from "@/components/signup/slider";
 import SliderWrapper from "@/components/signup/slider-wrapper";
 import Button from "@/components/form/button";
 import H6 from "@/components/ui/h6";
@@ -11,9 +9,9 @@ import P from "@/components/ui/p";
 import { Fragment } from "react";
 import CommonButton from "@/components/ui/button";
 import { useTranslation } from "next-i18next";
-import i18next from "i18next";
 import Link from 'next/link';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 const languages = [
     {
         code: 'en',
@@ -29,7 +27,8 @@ const languages = [
 
 function SignUp() {
     const  {t}  = useTranslation();
-    const { data: session, loading } = useSession();
+    const { data: session, loading} = useSession();
+   
     const [toe, setToe] = useState("personal");
     
     if (loading) {
@@ -37,8 +36,18 @@ function SignUp() {
     }
 
     if (session) {
+
+        let token;
+    
         console.log(session);
-        console.log(session.id_token);// for google
+
+        if(session.user.id){
+            token = session.user.id;
+        }else if(session.id_token){
+            token = session.id_token;
+        }
+
+        
         return (
             <>
                 Signed in as {session.user.email} <br />
