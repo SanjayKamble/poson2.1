@@ -29,7 +29,7 @@ function SignUp() {
     const  {t}  = useTranslation();
     const { data: session, loading} = useSession();
    
-    const [toe, setToe] = useState("personal");
+    const [toe, setToe] = useState("Personal");
     
     if (loading) {
         return <div>Loading...</div>
@@ -124,9 +124,9 @@ function SignUp() {
                             </div>
                             <P classNames="self-center">{t('what_are_you_looking_for')}</P>
                             <div className="flex space-x-3 py-4 mb-2">
-                                <Radio id="personal" label={t('personal')} name="user-type" value="personal" onClick={handleRadio} dc = {true}/>
-                                <Radio id="organization" label={t('organization')} name="user-type" value="organization" onClick={handleRadio} />
-                                <Radio id="partner" label={t('partner')} name="user-type" value="partner" onClick={handleRadio} />
+                                <Radio id="personal" label={t('personal')} name="user-type" value="Personal" onClick={handleRadio} dc = {true}/>
+                                <Radio id="organization" label={t('organization')} name="user-type" value="Organization" onClick={handleRadio} />
+                                <Radio id="partner" label={t('partner')} name="user-type" value="Partner" onClick={handleRadio} />
                             </div>
                             <CommonButton color="primary-500">
                                 <Link href={{

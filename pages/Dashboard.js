@@ -31,11 +31,11 @@ const Dashboard = () => {
 
       console.log(data);
 
-      // const timezone = new Date().toLocaleString({timeZone:'asia/kolkata' });
+      const timezone = new Date().toLocaleString();
 
-      // console.log(timezone);
+      console.log(timezone);
 
-        axios.post('https://dummy.io/'
+        axios.post('https://avatar.stackconsole.io/api/login'
         ,data
         ,{
           headers: {
